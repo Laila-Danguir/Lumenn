@@ -1,0 +1,152 @@
+body.homepage {
+  overflow-y: hidden;
+  div.wrapper-header {
+    background-image: url(../image/header-trace-vert.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    height: 1003px;
+    margin: 0;
+    padding: 0;
+    .wrapper-texte {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-top: 178px;
+      @media screen and (max-width: 600px) {
+        margin-top: 39px;
+      }
+      h2 {
+        width: 400px;
+        font-weight: bold;
+        font-size: 53px;
+        color: $white;
+        text-transform: uppercase;
+        @media screen and (max-width: 600px) {
+          font-size: 33px;
+          width: 228px;
+        }
+      }
+      p {
+        width: 580px;
+        color: white;
+        font-size: 18px;
+        font-family: $font-airbnb-light;
+        margin-top: 26px;
+        margin-bottom: 140px;
+        @media screen and (max-width: 600px) {
+          margin-top: 8px;
+        }
+      }
+
+      a {
+        width: 255px;
+        background: $grey;
+        color: $white;
+        text-transform: uppercase;
+        border-radius: 25px;
+        font-size: 22px;
+        font-family: $font-airbnb-bold;
+        @media screen and (max-width: 600px) {
+          align-self: center;
+        }
+      }
+    }
+    .green-bean {
+      position: relative;
+      #first-solar {
+        position: absolute;
+        top: 250px;
+        left: 50px;
+        @media screen and (max-width: 600px) {
+          height: 300px;
+          top: 250px;
+        }
+      }
+      #second-solar {
+        position: absolute;
+        top: 100px;
+        right: 50px;
+        @media screen and (max-width: 600px) {
+          height: 300px;
+          top: 130px;
+        }
+      }
+    }
+  }
+  // Nouveauté
+  div.wrapper-nouveaute {
+    margin-top: 200px;
+    .introduction {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      hr {
+        color: #55d97c;
+        border-color: #55d97c;
+        background-color: #55d97c;
+        height: 12px;
+        width: 363px;
+        margin-left: 0;
+        margin-right: 23px;
+      }
+      h3 {
+        font-size: 40px;
+        font-family: $font-airbnb-bold;
+      }
+    }
+    .container {
+      margin-top: 140px;
+    }
+    h2 {
+      font-family: $font-airbnb-bold;
+      font-size: 32px;
+      border-bottom: 5px solid #55d97c;
+      text-transform: uppercase;
+      margin-bottom: 64px;
+    }
+    p.price {
+      margin-top: 22px;
+      margin-bottom: 46px;
+    }
+    a {
+      @include btn-grey;
+      width: 331px;
+      font-size: 28px;
+      font-family: $font-airbnb-bold;
+      @media screen and (max-width: 600px) {
+        font-size: 15px;
+      }
+    }
+    .homepart {
+      margin-bottom: 230px;
+      p {
+        width: 420px;
+        margin-top: 46px;
+        margin-bottom: 64px;
+      }
+      @media screen and (max-width: 600px) {
+        a {
+          margin-bottom: 46px;
+        }
+      }
+    }
+  }
+  .wrapper-carousel {
+    margin-bottom: 250px;
+    .slick-slide {
+      margin: 0 27px;
+      opacity: 0.5;
+    }
+    /* the parent */
+    .slick-list {
+      margin: 0 -27px;
+    }
+    .slick-center {
+      opacity: 1;
+    }
+  }
+}

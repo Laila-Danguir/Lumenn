@@ -1,0 +1,162 @@
+html,
+body {
+  font-family: $font-airbnb-normal;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  overflow-x: hidden;
+}
+span.bold {
+  font-family: $font-airbnb-bold;
+}
+span.bold-medium {
+  font-family: $font-airbnb-medium;
+}
+
+@mixin btn-grey {
+  background-color: $grey;
+  border-radius: 25px;
+  color: $white;
+  text-transform: uppercase;
+}
+
+@mixin underline {
+  text-decoration: underline solid $vertclair;
+  text-underline-position: under;
+}
+
+footer {
+  background-color: #272727;
+  h5 {
+    font-family: $font-airbnb-bold;
+    color: $white;
+    text-decoration: underline solid $vertclair;
+    text-underline-position: under;
+    margin-bottom: 50px;
+  }
+  p {
+    color: $white;
+    font-size: 20px;
+    margin-right: 33px;
+  }
+  p.contact-text {
+    font-family: $font-airbnb-light;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 80px;
+  }
+
+  li {
+    color: $white;
+    a {
+      color: $white;
+    }
+  }
+  .about-list {
+    margin-left: 30px;
+  }
+}
+
+.newsletter-wrapper {
+  height: 490px;
+  background-color: $vertclair;
+  position: relative;
+  @media screen and (max-width: 600px) {
+    min-height: 154px;
+    height: auto;
+  }
+  .wrapper-h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 54px;
+    @media screen and (max-width: 600px) {
+      padding-top: 11px;
+    }
+    h3 {
+      font-family: $font-airbnb-bold;
+      width: 542px;
+      color: $white;
+      @media screen and (max-width: 600px) {
+        font-size: 14px;
+      }
+    }
+  }
+  .flex-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 105px;
+
+    @media screen and (max-width: 600px) {
+      margin-top: 11px;
+    }
+    input {
+      width: 688px;
+      @media screen and (max-width: 1600px) {
+        width: 500px;
+      }
+      @media screen and (max-width: 600px) {
+        width: 300px;
+        margin-bottom: 18px;
+        margin-left: 30px;
+      }
+    }
+    button {
+      @include btn-grey;
+      width: 254px;
+      margin-left: 49px;
+      @media screen and (max-width: 600px) {
+        margin-bottom: 18px !important;
+      }
+      @media screen and (max-width: 1600px) {
+        width: 200px;
+      }
+    }
+  }
+  img#team-left {
+    position: absolute;
+    top: -75px;
+    left: -330px;
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+  img#team-right {
+    position: absolute;
+    top: -74px;
+    right: -230px;
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+}
+.hr-vert {
+  color: #55d97c;
+  border-color: #55d97c;
+  background-color: #55d97c;
+  height: 12px;
+  width: 363px;
+  margin-left: 0;
+  margin-right: 23px;
+  @media screen and (max-width: 600px) {
+    width: 115px !important;
+  }
+}
+
+.wrapper-retour {
+  margin-top: 43px;
+  a {
+    @include underline;
+    font-family: $font-airbnb-bold;
+    font-size: 20px;
+    color: $black;
+  }
+
+  .green {
+    color: $vertclair;
+    margin-right: 17px;
+    margin-left: 45px;
+  }
+}
